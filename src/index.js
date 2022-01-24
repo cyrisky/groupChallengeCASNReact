@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 import FormEdit from './FormEdit';
+import reportWebVitals from './reportWebVitals';
 
-class FormEdit extends Component {
-  render() {
-    return (
-      <div className="FormEdit">
-        <Form />
-      </div>
-    )
-  }
-}
 
-export default FormEdit;
+ReactDOM.render(
+  <React.StrictMode>
+    <FormEdit />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
