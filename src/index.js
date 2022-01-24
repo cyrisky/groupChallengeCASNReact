@@ -2,14 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import FormRegister from './FormRegister';
-import App from './App';
+import Form from './Form';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormRegister />
-    <App />
+    <Form />
   </React.StrictMode>,
   document.getElementById('root')
 );
